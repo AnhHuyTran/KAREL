@@ -1,0 +1,15 @@
+while(noBeepersPresent()){
+	if(frontIsBlocked()){
+		turnLeft();   
+		while(frontIsClear()){
+			move();
+			while(rightIsClear()){
+				turnRight();
+				move();
+			}
+		}
+	}
+}
+while(beepersPresent()){
+	pickBeeper();   
+}
