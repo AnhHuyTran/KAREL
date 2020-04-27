@@ -1,0 +1,23 @@
+putBeeper();
+while(frontIsClear()){
+	move();
+}
+turnAround();
+putBeeper();
+
+move();
+while(noBeepersPresent()){
+  move();
+  if(beepersPresent()){
+  	pickBeeper();
+    turnAround();
+    move();
+    putBeeper();
+    move();
+    if(beepersPresent()){
+    	pickBeeper();
+      turnAround();
+      move();
+    }
+  }
+}
