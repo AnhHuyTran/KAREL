@@ -1,0 +1,23 @@
+move();
+move();
+move();
+
+while(beepersPresent()){
+	pickBeeper();
+	move();
+	putBeeper();
+	putBeeper();
+	turnAround();
+	move();
+	turnAround();
+}
+
+move();
+while(beepersPresent()){
+  pickBeeper();
+  turnAround();
+  move();
+  putBeeper();
+  turnAround();
+  move();
+}
