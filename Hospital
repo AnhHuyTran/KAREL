@@ -1,0 +1,20 @@
+while(frontIsClear()){
+	move();
+  if(beepersPresent()){
+  	turnLeft();
+    move();
+    putBeeper();
+    move();
+    putBeeper();
+    turnRight();
+    move();
+    putBeeper();
+    turnRight();
+    move();
+    putBeeper();
+    move();
+    putBeeper();
+    move();
+    turnLeft();
+  }
+}
